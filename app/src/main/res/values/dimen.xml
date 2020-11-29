@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="imgButtonSize">26dp</dimen>
+    <dimen name="imgTopMargin">12dp</dimen>
+    <dimen name="childMargin">12dp</dimen>
+    <dimen name="simpleMargin">16dp</dimen>
+    <dimen name="buttonBorderMargin">12dp</dimen>
+    <dimen name="launcher_logintxt_marginTop">64dp</dimen>
+    <dimen name="launcher_main_marginTop">80dp</dimen>
+    <dimen name="launcher_loginbutton_marginTop">16dp</dimen>
+    <dimen name="launcher_check_marginVertical">8dp</dimen>
+    <dimen name="launcher_progress_marginBottom">4dp</dimen>
+    <dimen name="launcher_progress_marginStart">4dp</dimen>
+    <dimen name="menu_activity_padding">16dp</dimen>
+    <dimen name="library_title_textSize">22sp</dimen>
+    <dimen name="libraryitem_layout_margin">12dp</dimen>
+    <dimen name="libraryitem_star_margintop">12dp</dimen>
+    <dimen name="libraryitem_text_size">18dp</dimen>
+    <dimen name="star0_left">16dp</dimen>
+    <dimen name="star1_left">42dp</dimen>
+    <dimen name="star2_left">68dp</dimen>
+    <dimen name="star3_left">94dp</dimen>
+    <dimen name="star4_left">120dp</dimen>
+    <dimen name="star_progress_left">146dp</dimen>
+    <dimen name="libraryitem_general_margin">16dp</dimen>
+    <dimen name="library_slide_marginVertical">16dp</dimen>
+</resources>

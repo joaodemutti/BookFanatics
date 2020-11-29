@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="@color/lightGray"
+    app:cardElevation="6dp"
+    android:layout_margin="@dimen/libraryitem_layout_margin">
+
+    <TextView
+        android:id="@+id/libraryitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/libraryitem_general_margin"
+        android:textSize="@dimen/libraryitem_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/libraryitem_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_margin="@dimen/libraryitem_general_margin"/>
+
+    <TextView
+        android:id="@+id/libraryitem_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_margin="@dimen/libraryitem_general_margin"
+         />
+
+    <ImageView
+        android:id="@+id/star0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/star0_left"
+        android:layout_marginBottom="@dimen/libraryitem_general_margin"
+        app:srcCompat="@drawable/ic_star_none" />
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/libraryitem_general_margin"
+        android:layout_marginStart="@dimen/star1_left"
+        app:srcCompat="@drawable/ic_star_none" />
+
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/libraryitem_general_margin"
+        android:layout_marginStart="@dimen/star2_left"
+        app:srcCompat="@drawable/ic_star_none" />
+
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/libraryitem_general_margin"
+        android:layout_marginStart="@dimen/star3_left"
+        app:srcCompat="@drawable/ic_star_none" />
+
+    <ImageView
+        android:id="@+id/star4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/libraryitem_general_margin"
+        android:layout_marginStart="@dimen/star4_left"
+        app:srcCompat="@drawable/ic_star_none" />
+
+    <ProgressBar
+        android:id="@+id/libraryitem_progressBar"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/libraryitem_general_margin"
+        android:layout_marginStart="@dimen/star_progress_left"/>
+
+</androidx.cardview.widget.CardView>

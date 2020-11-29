@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LauncherActivity_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LauncherActivity">
+
+    <TextView
+        android:id="@+id/LauncherActivity_titletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="@dimen/launcher_main_marginTop"
+        android:text="@string/app_name"
+        android:textSize="@dimen/textsize_splashtitle" />
+
+    <Button
+        android:id="@+id/launcher_loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/launcherActivity_passwordtext"
+        android:layout_alignStart="@+id/launcherActivity_passwordtext"
+        android:layout_marginTop="@dimen/launcher_loginbutton_marginTop"
+        android:onClick="onLogin"
+        android:text="@string/login"
+        android:visibility="invisible"/>
+
+    <EditText
+        android:id="@+id/LauncherActivity_logintext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LauncherActivity_titletext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/launcher_logintxt_marginTop"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/login_hint"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/launcherActivity_passwordtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LauncherActivity_logintext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/launcher_logintxt_marginTop"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/password_hint"
+        android:inputType="text|textPassword"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/launcher_progress"
+        style="@android:style/Widget.ProgressBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/launcher_loginbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/launcher_loginbutton_marginTop"
+        android:visibility="visible" />
+
+    <CheckBox
+        android:id="@+id/launcher_check_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/launcher_loginbutton"
+        android:layout_alignEnd="@+id/launcherActivity_passwordtext"
+        android:layout_alignBottom="@+id/launcher_loginbutton"
+        android:layout_marginTop="@dimen/launcher_check_marginVertical"
+        android:layout_marginBottom="@dimen/launcher_check_marginVertical"
+        android:button="@null"
+        android:drawableRight="?android:attr/listChoiceIndicatorMultiple"
+        android:onClick="onWantSavePassword"
+        android:text="@string/launcher_check_password"
+        android:visibility="invisible" />
+<Button
+    android:id="@+id/launcher_newlogin_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:text="@string/newlogin_activity_label"
+    android:onClick="onLoginManager"
+    android:layout_margin="@dimen/simpleMargin"
+    android:visibility="invisible"/>
+</RelativeLayout>

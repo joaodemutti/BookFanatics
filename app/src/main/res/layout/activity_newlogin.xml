@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewLoginActivity"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/newlogin_text_username"
+        android:hint="@string/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/newlogin_text_email"
+        android:hint="@string/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/newlogin_text_password"
+        android:hint="@string/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/newlogin_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/newlogin_activity_label"
+        android:onClick="onNewLogin"/>
+</LinearLayout>

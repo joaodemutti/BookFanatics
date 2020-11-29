@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LibraryActivity">
+
+    <TextView
+        android:id="@+id/library_text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/simpleMargin"
+        android:layout_marginTop="@dimen/simpleMargin"
+        android:textSize="@dimen/library_title_textSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/LibraryActivity_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/library_text_name"
+        android:layout_marginStart="@dimen/simpleMargin"
+        android:layout_marginTop="@dimen/simpleMargin"
+        android:textIsSelectable="true" />
+
+    <Button
+        android:id="@+id/Library_map_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Library_navbar_include"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/buttonBorderMargin"
+        android:layout_marginBottom="@dimen/simpleMargin"
+        android:onClick="mapIntent"
+        android:text="@string/maps_button" />
+
+    <ImageView
+        android:id="@+id/Library_favorite_button"
+        android:layout_width="@dimen/imgButtonSize"
+        android:layout_height="@dimen/imgButtonSize"
+        android:layout_alignTop="@+id/Library_map_button"
+        android:layout_marginStart="@dimen/imgButtonSize"
+        android:layout_marginTop="@dimen/imgTopMargin"
+        android:layout_toEndOf="@+id/Library_share_button"
+        android:contentDescription="@string/favorite"
+        android:onClick="onFavorite"
+        app:srcCompat="@drawable/ic_menuitem_mylibraries" />
+
+    <ImageView
+        android:id="@+id/Library_share_button"
+        android:layout_width="@dimen/imgButtonSize"
+        android:layout_height="@dimen/imgButtonSize"
+        android:layout_alignTop="@+id/Library_map_button"
+        android:layout_marginStart="@dimen/imgButtonSize"
+        android:layout_marginTop="@dimen/imgTopMargin"
+        android:layout_toEndOf="@+id/Library_map_button"
+        app:srcCompat="@drawable/ic_share"
+        android:contentDescription="@string/share"
+        android:onClick="onShareIntent" />
+
+    <include
+        android:id="@+id/Library_navbar_include"
+        layout="@layout/include_bottom_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Library_navbar_include"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/buttonBorderMargin"
+        android:layout_marginBottom="@dimen/imgTopMargin"
+        android:clickable="true"
+        android:onClick="onCamera"
+        app:srcCompat="@drawable/ic_camera" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/library_pager_slide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/Library_map_button"
+        android:layout_below="@id/LibraryActivity_address"
+        android:layout_marginTop="@dimen/library_slide_marginVertical"
+        android:layout_marginBottom="@dimen/library_slide_marginVertical" />
+
+</RelativeLayout>

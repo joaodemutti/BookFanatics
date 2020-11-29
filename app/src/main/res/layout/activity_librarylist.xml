@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backBackground">
+
+    <include
+        layout="@layout/include_bottom_nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/LibraryList_error_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/noresult"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/BUTTON"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/LibrayList_libraries_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/SharedLayout_bottombar" />
+
+
+</RelativeLayout>

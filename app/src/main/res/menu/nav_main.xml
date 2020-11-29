@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_menuitem_librarylist"
+        android:icon="@drawable/ic_menuitem_librarylist"
+        android:title="Livrarias"/>
+    <item
+        android:id="@+id/nav_menuitem_main"
+        android:icon="@drawable/ic_menuitem_main"
+        android:title="Inicio" />
+    <item
+        android:id="@+id/nav_menuitem_roundness"
+        android:icon="@drawable/ic_menuitem_roundness"
+        android:title="Redondeza" />
+    <item
+        android:id="@+id/nav_menuitem_mylibraries"
+        android:icon="@drawable/ic_menuitem_mylibraries"
+        android:title="Favoritos" />
+</menu>

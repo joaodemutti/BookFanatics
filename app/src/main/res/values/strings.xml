@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_api_key">NO_API_KEY</string>
+    <string name="app_name">BookFanatics</string>
+    <string name="noresult">Sem Resultado</string>
+    <dimen name="textsize_splashtitle">24sp</dimen>
+    <string name="maps_button">Mapa</string>
+    <string name="light_button">Light</string>>
+    <string name="share">Compartilhar</string>
+    <string name="share_message">"Olhe só essa livraria que achei!!"</string>
+    <string name="favorite">Favorito</string>
+    <string name="search">Buscar</string>
+    <string name="login">Entrar</string>
+    <string name="change_user">Trocar de usuário</string>
+    <string name="reset_sqlite">Apagar dados de uso</string>
+    <string name="login_hint">Username ou Email</string>
+    <string name="password_hint">Senha</string>
+    <string name="invalid_login_error">Credênciais incorretas</string>
+    <string name="launcher_check_password">Lembrar senha</string>
+    <string name="invalid_loginid_error">ERRO, ID de login não correspondente</string>
+    <string name="create_image_error">Erro na criação de imagem</string>
+    <string name="login_safedelete_message">Clique novamente para confirmar a exclusão</string>
+    <string name="login_postdelete_message">O usuário %login foi excluido</string>
+    <string name="sqlite_relation1">relationID in (select id from relation where loginID = ? )</string>
+    <string name="no_existing_login">Não há nenhum usuário existente</string>
+    <string name="newlogin_activity_label">Novo Usuário</string>
+    <string name="username">Username (Nome de usuario)</string>
+    <string name="email">Email</string>
+    <string name="password">Senha</string>
+    <string name="invalid_newlogin_inputs">Os valores</string>
+    <string name="newlogin_validate_minimumlength">Preencha com a quantidade minima de caracteres</string>
+    <string name="newlogin_validate_usernametaken">o username ja foi escolhido por outro usuario</string>
+    <string name="newlogin_validate_emailtaken">O email ja foi escolhido por outro usuario</string>
+    <string name="newlogin_created_message">Novo usuario registrado\nusername: %username\nemail: %email\nid: %id</string>
+</resources>
